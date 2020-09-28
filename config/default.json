@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://george26:george26@meetupdevs.6jpsi.mongodb.net/george26?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://george26:george26@meetupdevs.6jpsi.mongodb.net/george26?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
 }
