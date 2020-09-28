@@ -14,7 +14,11 @@ router.post('/',
         })
     ],
     (req, res) => {
-        console.log(req.body)
+        const errors = validationResult(req);
+        //if the parameters above does not match, send status 400
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() })
+        }
         res.send('User route')
     });
 
