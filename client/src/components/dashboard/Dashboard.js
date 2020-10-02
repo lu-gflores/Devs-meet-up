@@ -6,6 +6,7 @@ import { getCurrentProfile } from '../../actions/profile'
 import Spinner from '../layout/Spinner'
 import DashboardActions from '../dashboard/DashboardActions'
 import Experience from './Experience'
+import Education from './Education'
 const Dashboard = ({ getCurrentProfile, auth: { user }, profile: { profile, loading } }) => {
     useEffect(() => {
         getCurrentProfile()
@@ -19,6 +20,7 @@ const Dashboard = ({ getCurrentProfile, auth: { user }, profile: { profile, load
                 <Fragment>
                     <DashboardActions />
                     <Experience experience={profile.experience} />
+                    <Education education={profile.education} />
                 </Fragment>
                 : <Fragment>
                     <p>You have not set up your profile, plase add your information</p>
