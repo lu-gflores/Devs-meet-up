@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Moment from 'react-moment'
 import { deleteComment } from '../../actions/post'
+
 const CommentItem = ({ postId, comment: { _id, text, name, avatar, user, date }, auth, deleteComment }) => {
     return (
         <div className="post bg-white p-1 my-1">
