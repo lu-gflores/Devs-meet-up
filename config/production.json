@@ -1,6 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://george26:george26@meetupdevs.6jpsi.mongodb.net/george26?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken",
-    "githubClientId": "5e7f42b5510e4c9b5414",
-    "githubSecret": "f71a5ae370afad324eca47e289ffff5721070d6a"
-}
