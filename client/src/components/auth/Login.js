@@ -15,7 +15,7 @@ const Login = ({ login, isAuthenticated }) => {
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value })
 
-    const onSubmit = async e => {
+    const onSubmit = e => {
         e.preventDefault();
         login(email, password)
     }
@@ -27,7 +27,7 @@ const Login = ({ login, isAuthenticated }) => {
         <Fragment>
             <h1 className="large text-primary">Sign In</h1>
             <p className="lead"><i className="fas fa-user"></i> Login to Your Account</p>
-            <form className="form" onSubmit={e => onSubmit(e)}>
+            <form className="form" onSubmit={onSubmit}>
 
                 <div className="form-group">
                     <input type="email" placeholder="Email Address" name="email" value={email} onChange={e => onChange(e)} />
