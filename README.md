@@ -10,7 +10,7 @@ This is a MERN stack app thats consists of a small social network for developers
 
 ## Demo
 
-[Currently In Progress]()
+[Devs Meet Up](https://guarded-meadow-84534.herokuapp.com/)
 
 ![ProfilePage](/assets/profilepage.jpg)
 
